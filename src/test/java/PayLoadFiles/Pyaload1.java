@@ -118,18 +118,41 @@ public class Pyaload1 {
                      "}";
          }
 
-         public static String newPayload()
+         public static String newPayload(String aisle, String isbn)
          {
 
              return "{\n" +
                      "\n" +
                      "\"name\":\"Learn Appium Automation with Java\",\n" +
-                     "\"isbn\":\"bcd\",\n" +
-                     "\"aisle\":\"227\",\n" +
+                     "\"isbn\":\""+isbn+"\",\n" +
+                     "\"aisle\":\""+aisle+"\",\n" +
                      "\"author\":\"John foe\"\n" +
                      "}";
 
          }
+
+         public static String jiraBody()
+         {
+
+             return "{\n" +
+                     "    \"body\": \"my first comment\",\n" +
+                     "    \"visibility\": {\n" +
+                     "        \"type\": \"role\",\n" +
+                     "        \"value\": \"Administrators\"\n" +
+                     "    }\n" +
+                     "}";
+
+         }
+
+    public static String loginCreds()
+    {
+
+        return "{ \"username\": \"rahul.sharma19790\", \"password\": \"rudra@123Q\" }";
+
     }
+
+
+
+}
 
 
